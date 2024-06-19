@@ -8,7 +8,7 @@ export default function TodoList() {
    ]
     
    return (
-        <ul>
+        <ul class="main">
             {todos.map((todo, todoIndex) => {
                 return (
                     <li key={todoIndex}>{todo}</li>
