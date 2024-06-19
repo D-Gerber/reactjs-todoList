@@ -3,11 +3,7 @@ import TodoInput from "./components/TodoInput"
 import TodoList from "./components/TodoList"
 
 function App() {
-  const [todos, setTodos] = useState([
-    'Get up early and study',
-    'Take 15 min breaks in between',
-    'Get snacks and continue studying'
-  ])
+  const [todos, setTodos] = useState([])
 
   function handleAddTodos(newTodo) {
     const newTodoList = [...todos, newTodo]
