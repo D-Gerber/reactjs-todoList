@@ -10,7 +10,9 @@ export default function TodoCard(props) {
 
                     <i className="fa-solid fa-pen-to-square"></i>
                 </button>
-                <button>
+                <button onClick={() => {
+                    handleDeleteTodo()
+                }}>
                     <i className="fa-solid fa-trash-can"></i>
                 </button>
             </div>
