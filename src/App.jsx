@@ -6,12 +6,12 @@ function App() {
     'Go to the gym',
     'Eat more fruits and vegetables',
     'Pick up kids from school'
-]
+  ]
 
   return (
     <>
       <TodoInput />
-      <TodoList />
+      <TodoList todos={todos} />
     </>
   );
 }
