@@ -6,10 +6,13 @@ export default function TodoCard(props) {
         <li className='todoItem' >
             {children}
             <div className='actionsContainer'>
-
+                <button>
 
                 <i className="fa-solid fa-pen-to-square"></i>
+                </button>
+                <button>
                 <i className="fa-solid fa-trash-can"></i>
+                </button>
             </div>
         </li>
     )
