@@ -9,9 +9,14 @@ function App() {
     'Get snacks and continue studying'
   ])
 
+  function handleAddTodos(newTodo) {
+    const newTodoList = [...todos, newTodo]
+    setTodos(newTodoList)
+  }
+
   return (
     <>
-      <TodoInput />
+      <TodoInput handleAddTodos={handleAddTodos} />
       <TodoList todos={todos} />
     </>
   );
